@@ -1,20 +1,22 @@
 # Dockerfile
-FROM node:22.7.0
+# Base image
+FROM node:14
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files and install dependencies
-COPY package.json .
-COPY package-lock.json .
-RUN npm install
-RUN npm run dev
+# Copy package files
+COPY package.json package-lock.json ./
 
-# Copy application code
+# Install dependencies
+RUN npm ci
+
+# Copy application files
 COPY . .
 
-# Expose the port the app runs on
+# Expose the application port
 EXPOSE 3500
 
 # Start the application
-## CMD ["npm", "start"]
+CMD ["npm", "start"]
+
