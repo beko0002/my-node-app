@@ -28,4 +28,4 @@ jobs:
         run: docker build -t myapp-image .
 
       - name: Run Docker Container
-        run: docker run -d -p 3000:3000 myapp-image
+        run: docker run -d -p 3500:3500 myapp-image
