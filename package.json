@@ -12,12 +12,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.1",
-    "dotenv": "^16.0.3"  
+    "dotenv": "^16.0.3",
+    "express": "^4.21.1"
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "supertest": "^7.0.0",
-    "nodemon": "^2.0.15"  
+    "nodemon": "^2.0.15",
+    "supertest": "^7.0.0"
   }
 }
